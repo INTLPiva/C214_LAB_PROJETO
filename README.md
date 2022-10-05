@@ -14,7 +14,6 @@ cd C214_LAB_PROJETO
 
 2. Instalar dependências
 ```bash
-cd react-project
 npm install
 ```
 
