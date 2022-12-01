@@ -17,7 +17,7 @@ routes.get('/characters', async (request, response) => {
 
         return response.json(characters);
     } catch (error) {
-        return response.json(error.message);
+        return response.json(error);
     }
 });
 
@@ -43,7 +43,7 @@ routes.post('/character', async (request, response) => {
 
         return response.json(character);
     } catch (error) {
-        return response.json(error.message);
+        return response.json(error);
     }
 });
 
@@ -65,7 +65,7 @@ routes.put('/character/:id', async (request, response) => {
 
         return response.json(character);
     } catch (error) {
-        return response.json(error.message);
+        return response.json(error);
     }
 });
 
@@ -81,7 +81,7 @@ routes.delete('/character/:id', async (request, response) => {
 
         return response.status(204).send();
     } catch (error) {
-        return response.json(error.message);
+        return response.json(error);
     }
 });
 
