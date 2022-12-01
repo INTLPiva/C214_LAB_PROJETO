@@ -34,4 +34,10 @@ describe('Create Character', () => {
 
         expect(characterCreated).toHaveProperty('id');
     });
+
+    it('should be able to find the characters', async () => {
+        const characters = await getRepository(Character).find();
+
+        expect(characters).not.toBe([]);
+    });
 });
