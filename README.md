@@ -24,6 +24,12 @@ yarn
 ```bash
 yarn dev:server
 ```
+
+4. Para rodar os testes do back-end
+```bash
+yarn test
+```
+
 ## Para executar o front-end do projeto
 
 1. Clonar o repositório
