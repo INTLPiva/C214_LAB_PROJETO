@@ -1,3 +1,5 @@
+[![CI de testes backend](https://github.com/INTLPiva/C214_LAB_PROJETO/actions/workflows/node.js.yml/badge.svg)](https://github.com/INTLPiva/C214_LAB_PROJETO/actions/workflows/node.js.yml)
+
 # C214_LAB_PROJETO
 Repositório para código do projeto do laboratório de Engenharia de Software
 
