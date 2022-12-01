@@ -40,4 +40,20 @@ describe('Create Character', () => {
 
         expect(characters).not.toBe([]);
     });
+
+    it('should be able to delete a character', async () => {
+        const characterToDelete = await getRepository(Character).findOne({
+            where: { name: 'Lucas' },
+        });
+
+        if (characterToDelete) {
+            await getRepository(Character).remove(characterToDelete);
+        }
+
+        const characterDeleted = await getRepository(Character).findOne({
+            where: { name: 'Lucas' },
+        });
+
+        expect(characterDeleted).toBe(undefined);
+    });
 });
